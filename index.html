@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>520 光山 吉他 乐园<</title>
+    <meta name="Keywords" content="520gsjt 光山吉他">
+    <meta name="Description" content="520gsjt 光山吉他">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/TweenMax.js" type="text/javascript"></script>
+    <script src="js/ImagesMoveEff.js" type="text/javascript"></script>
+    <script src="js/swfobject_modified.js" type="text/javascript"></script>
+    <script src="js/HtmlBox.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("div.back_top").click(function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
+            return false;
+            });
+          })
+        </script>
+  </head>
+  <body>
+    <div id="tips" style=" position:absolute;top:0;left:0; z-index:99">
+      <div id="video1" style=" position:absolute;top:0;left:0; background:#FFF; width:640px;height:360px; display:none;"></div>
+    </div>
+    <div class="main">
+      <div class="header" style="height:90px">
+        <div class="top_right" style="padding-top: 0px;">
+          <p class="clear" style="padding-top:20px"></p>
+        </div>
+        <p class="clear"></p>
+        <div id="logo">
+          <a href="http://520gsjt.com"><img src="images/50.jpg"/></a>
+        </div>
+
+        <ul class="menu">
+          <li><a class="current" href="index.html">首页</a></li>
+          <li><a href="gallery/index.html">相册</a></li>
+          <li><a href="javascript:void(0)" onclick="alert('还没得上线,敬请期待');">视频集锦</a></li>
+          <li><a href="javascript:void(0)" onclick="alert('还没得上线,敬请期待');">曲谱乐园</a></li>
+          <li style="background:none;"><a href="javascript:void(0)" onclick="alert('还没得上线,敬请期待');">文章资讯</a></li>
+        </ul>
+
+      </div>
+
+      <div><img src="images/index_img.gif" alt="BIG PAD" /></div>
+      <div class="icon">
+        <span class="icon_01" id="nav_0">上官云青.沈悦</span>
+        <span class="icon_02" id="nav_1">方木.盛立坤</span>
+        <span class="icon_03" id="nav_2">杨豪.张云昊</span>
+        <span class="icon_04" id="nav_3">梁雨东</span>
+        <span class="icon_05" id="nav_4">朱爱华</span>
+        <span class="icon_06" id="nav_5">易子腾</span>
+        <span class="icon_07" id="nav_6">刘欣.刘蕊.张盼盼</span>
+        <span class="icon_08" id="nav_7">代莉</span>
+      </div>
+      <div class="banner" >
+        <div id="banner" style="position:relative; width:990px; height:549px; overflow:hidden; position:relative;">
+          <img class="kv1" alt="banner1" src="images/members/IMG_5805.JPG" />
+          <img class="kv2" alt="banner2" src="images/members/IMG_5811.JPG" />
+          <img class="kv3" alt="banner3" src="images/members/IMG_5818.JPG" />
+          <img src="images/members/IMG_5824.JPG" alt="banner4" class="kv4" />
+          <img class="kv5" alt="banner5" src="images/members/IMG_5833.JPG" />
+          <img class="kv6" alt="banner6" src="images/members/IMG_5853.JPG" />
+          <img class="kv7" alt="banner7" src="images/members/IMG_5858.JPG" />
+          <img class="kv8" alt="banner8" src="images/members/IMG_5877.JPG" />
+        </div>
+        <img class="left_arrow" id="left_arrow" src="images/left_arrow.png"  alt="前一个"/>
+        <img class="right_arrow" id="right_arrow" src="images/right_arrow.png" alt="后一个" />
+      </div>
+      <ul class="index_img">
+        <li>
+        <img onclick="addVideo('video_player_1');" src="images/weishi_cover.png" alt="520gsjt.com"/>
+        <a id="mp4_link" style="z-index:999" href="video/mp4/weishi_0826.mp4"><img style="position:absolute;left:122px; top:168px;z-index:9;" src="images/index_img1_bt.jpg" alt="mp4_link" /></a>
+        </li>
+        <li>
+        <img onclick="addVideo('video_player_1');" src="images/shizizuo_cover.png" alt="观看视频 了解BIGPAD"/>
+        <a id="mp4_link" style="z-index:999" href="video/mp4/weishi_0826.mp4"><img style="position:absolute;left:454px; top:168px;z-index:9;" src="images/index_img1_bt.jpg" alt="mp4_link" /></a>
+        </li>
+        <li style="padding-right:0;">
+        <img onclick="addVideo('video_player_1');" src="images/xinyuan_cover.png" alt="观看视频 了解BIGPAD"/>
+        <a id="mp4_link" style="z-index:999" href="video/mp4/xinyuan.mp4"><img style="position:absolute;left:787px; top:168px;z-index:9;" src="images/index_img1_bt.jpg" alt="mp4_link" /></a>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      var _myImages=new ImagesMove("banner","img",990,["left_arrow","right_arrow",imagesComplete],true,4000);
+      function imagesComplete(index){
+        showStyle(index);
+      }
+      //=================
+      var _now=0;
+      for(var i=0;i<8;i++){
+        var _el=document.getElementById("nav_"+i);
+        _el.index=i;
+        _el.style.cursor="pointer";
+        _el.onmouseover=function(){
+          if(this.index!=_now){
+            TweenMax.to(this,.4,{css:{alpha:.3}});
+          }
+        }
+        _el.onmouseout=function(){
+          if(this.index!=_now){
+            TweenMax.to(this,.4,{css:{alpha:0.5}});
+          }
+        }
+        _el.onclick=function(){
+          if(this.index!=_now){
+            _now=this.index;
+            showStyle(_now);
+            _myImages.showDiv(_now);
+          }
+        }
+      }
+      showStyle(_now);
+      function showStyle(id){
+        for(var i=0;i<8;i++){
+          var _el=document.getElementById("nav_"+i);
+          if(i==id){
+            TweenMax.to(_el,.4,{css:{alpha:1}});
+            }else{
+            TweenMax.to(_el,.4,{css:{alpha:0.5}});
+          }
+        }
+      }
+    </script>
+    <p class="clear"></p>
+    <script type="text/javascript">start();</script>
+
+    <!-- footer -->
+    <div class="clearfix"></div>
+    <div style="width: 100%;text-align: center">
+      <div class="back_top" style="width: 990px;margin: auto;padding: 15px 0 10px;text-align: right">
+        <a href="#top_head" >
+          <img alt="Top" src="images/top.gif"/>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
