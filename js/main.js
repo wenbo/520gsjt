@@ -4,6 +4,9 @@ function start(){
 }
 function loadVideoFlash(url,id){
 	document.getElementById("video1").innerHTML='<div id="video_player_1"></div>';
+        document.getElementById("video2").innerHTML='<div id="video_player_2"></div>';
+        document.getElementById("video3").innerHTML='<div id="video_player_3"></div>';
+
 	var flashvars = {};
 	var params = {
 		menu: "false",
@@ -22,15 +25,16 @@ function closeVideo(){
 }
 
 function addVideo(id){
+        var loaded_url = '/swf/video.swf?url=/video/flv/' + id;
 	document.getElementById("video1").style.background="#fff";
 	if(isFlash()){
-                loadVideoFlash('/swf/video.swf?url=/video/flv/weishi_0826.flv',id) ; 
+                loadVideoFlash(loaded_url, 'video_player_1') ; 
 	}else{
 		if(!understands_video()){
-			loadVideoFlash('/swf/video.swf?url=/video/flv/weishi_0826.flv',id) ; 
+			loadVideoFlash(loaded_url, 'video_player_1') ; 
 		}else{
 			if(navigator.userAgent.search('MSIE 7.0')>-1 || navigator.userAgent.search('MSIE 8.0')>-1 || navigator.userAgent.search('MSIE 9.0')>-1){
-				loadVideoFlash('/swf/video.swf?url=/video/flv/weishi_0826.flv',id) ; 
+				loadVideoFlash(loaded_url, 'video_player_1') ; 
 			}else{
 				document.getElementById("video1").style.background="none";
 				document.getElementById("video1").innerHTML='<div id="video_player_1" style="width:640px; height:360px;"></div>';
