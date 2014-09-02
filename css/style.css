@@ -67,8 +67,11 @@ ul.menu li a:hover{color:#ccc; background:url(../images/menu_arrow.gif) no-repea
 ul.menu li a.current{
   background:url(../images/menu_arrow.gif) no-repeat center;
   padding-bottom:30px;
+}
+ul.menu li a.top_link{
   padding-left: 9px;
 }
+
 ul.product_list{width:990px; margin:0 auto; padding-top:53px;}
 ul.product_list li{float:left; width:120px; padding-right:81px;}
 ul.product_list li div{ padding-top:19px;}
@@ -202,4 +205,22 @@ div#title h1 span{
 div#title h2{
   font-size: 24px;
   line-height:36px;
+}
+div.video_container{
+  border: 1px solid #ACACAC;
+  margin: 0 20px 0 171px;
+  width: 657px;
+}
+p.video_desc{
+  margin: 0 20px 0 171px;
+  width: 657px;
+  line-height: 15px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 14px;
+}
+div.video_containers{
+  margin-top: 30px;
 }
