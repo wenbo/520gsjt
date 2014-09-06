@@ -35,3 +35,4 @@ scp gallery/index.html wenbo@0371zhong.com:/var/www/html/520gsjt.com/gallery/
 scp -r video/flv/0906/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/video/flv/
 
 scp video.html wenbo@0371zhong.com:/var/www/html/520gsjt.com/video.html
+scp -r images/video/0906/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/video/
