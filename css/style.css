@@ -231,3 +231,28 @@ div.video_containers{
   right: 0;
   z-index: 999;
 }
+
+.num_nav{ 
+position:fixed;
+top:8%;
+left:148px;
+display:none;
+z-index:4;
+}
+.num_nav li{width:33px; height:33px;  margin-bottom:2px; position:relative; cursor:pointer;line-height:33px;text-align:center;color:#fff; }
+.num_nav li span{width:33px; height:33px;line-height:33px;text-align:center;color:#fff; position:relative;display:block;background:#a6a5a5; z-index:1;}
+.num_nav li p{
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:33px;
+  background:#a481c8;
+  text-align:center;
+  font-size: 14px;
+  line-height:33px;
+  color:#fff;
+  overflow:hidden;
+}
+.num_nav li img{ position:absolute;top:7px;left:3px;}
+.num_nav .num_nav_li{ background:#a481c8;}

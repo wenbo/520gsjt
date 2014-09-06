@@ -1,4 +1,5 @@
-var _html5_video='<video width="100%" height="100%" controls="controls" autoplay="autoplay"> <source src="/BIGPAD/video/SHARP_VP_BIG_PAD.mp4" type="video/mp4" /></video>';
+var _html5_video='<video width="100%" height="100%" controls="controls" autoplay="autoplay"> <source src="aaaa.mp4" type="video/mp4" /></video>';
+
 function start(){
   htmlBox=new creatHtmlBox("tips",["video1"]);
 }
@@ -36,9 +37,9 @@ function addVideo(id){
 			if(navigator.userAgent.search('MSIE 7.0')>-1 || navigator.userAgent.search('MSIE 8.0')>-1 || navigator.userAgent.search('MSIE 9.0')>-1){
 				loadVideoFlash(loaded_url, 'video_player_1') ; 
 			}else{
-				document.getElementById("video1").style.background="none";
-				document.getElementById("video1").innerHTML='<div id="video_player_1" style="width:640px; height:360px;"></div>';
-				document.getElementById(id).innerHTML=_html5_video;
+				//document.getElementById("video1").style.background="none";
+				//document.getElementById("video1").innerHTML='<div id="video_player_1" style="width:640px; height:360px;"></div>';
+				//document.getElementById(id).innerHTML=_html5_video;
 			}
 		}
 	}

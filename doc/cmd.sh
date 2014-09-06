@@ -1,3 +1,5 @@
+sed -i "s/content_/content_/g" `grep content_ -rl .`
+
 scp wenbo@0371zhong.com:/var/www/html/backup/20140901/520gsjt.com.tar.gz ./
 
 scp 520gsjt.com.tar.gz wenbo@0371zhong.com:/var/www/html/
@@ -36,3 +38,7 @@ scp -r video/flv/0906/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/video/flv/
 
 scp video.html wenbo@0371zhong.com:/var/www/html/520gsjt.com/video.html
 scp -r images/video/0906/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/video/
+
+scp js/JSResponsiveWeb.js js/main.js js/video_main.js js/video_numNav.js wenbo@0371zhong.com:/var/www/html/520gsjt.com/js/
+scp js/video_main.js wenbo@0371zhong.com:/var/www/html/520gsjt.com/js/
+

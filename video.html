@@ -11,7 +11,9 @@
     <script src="js/ImagesMoveEff.js" type="text/javascript"></script>
     <script src="js/swfobject_modified.js" type="text/javascript"></script>
     <script src="js/HtmlBox.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/JSResponsiveWeb.js" type="text/javascript"></script>
+    <script src="js/video_numNav.js" type="text/javascript"></script>
+    <script src="js/video_main.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function(){
           $("div.back_top").click(function(){
@@ -31,11 +33,6 @@
       </div>
     </div>
 
-    <div id="tips" style=" position:absolute;top:0;left:0; z-index:99">
-      <div id="video1" style=" position:absolute;top:0;left:0; background:#FFF; width:640px;height:360px; display:none;"></div>
-      <div id="video2" style=" position:absolute;top:0;left:0; background:#FFF; width:640px;height:360px; display:none;"></div>
-      <div id="video3" style=" position:absolute;top:0;left:0; background:#FFF; width:640px;height:360px; display:none;"></div>
-    </div>
     <div class="main"> 
       <div class="header" style="height:90px">
         <div class="top_right" style="padding-top: 0px;">
@@ -56,8 +53,7 @@
           <li><a href="javascript:void(0)" onclick="alert('还没得上线,敬请期待');">曲谱乐园</a></li>
           <li style="background:none;"><a href="javascript:void(0)" onclick="alert('还没得上线,敬请期待');">文章资讯</a></li>
         </ul>
-
-      </div>
+      </div><!-- end of div.header -->
 
       <div id="title">
         <h1><span>光山吉他</span>520gsjt.com</h1>
@@ -80,7 +76,7 @@ height:500
       </div>
         <p class="video_desc">"Passion Fantasy" by 徐飘飘，中国。</p>
         --->
-        <div class="video_container">
+        <div class="video_container content_1">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0906_1"></div>
           <script type="text/javascript">
@@ -95,7 +91,7 @@ height:500
       </div>
       <p class="video_desc">"断桥残雪" by 朱爱华</p>
 
-      <div class="video_container">
+      <div class="video_container content_2">
         <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
         <div id="video_0906_2"></div>
         <script type="text/javascript">
@@ -109,7 +105,7 @@ height:500
 </script>
       </div>
       <p class="video_desc">"千与千寻" by　潘乐</p> 
-        <div class="video_container">
+        <div class="video_container content_3">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0905_1"></div>
           <script type="text/javascript">
@@ -124,7 +120,7 @@ height:500
       </div>
       <p class="video_desc">"虫儿飞" by 代莉</p>
 
-        <div class="video_container">
+        <div class="video_container content_4">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0905_2"></div>
           <script type="text/javascript">
@@ -140,7 +136,7 @@ height:500
       <p class="video_desc">"滳答" by 朱爱华</p>
 
 
-        <div class="video_container">
+        <div class="video_container content_5">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0905_3"></div>
           <script type="text/javascript">
@@ -155,7 +151,7 @@ height:500
       </div>
       <p class="video_desc">"Falling Slowly 吉他三重奏" by 刘欣.刘蕊.张盼盼</p>
 
-        <div class="video_container">
+        <div class="video_container content_6">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0905_4"></div>
           <script type="text/javascript">
@@ -171,7 +167,7 @@ height:500
       <p class="video_desc">"三寸天堂" by 朱爱华</p>
 
 
-        <div class="video_container">
+        <div class="video_container content_7">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0905_5"></div>
           <script type="text/javascript">
@@ -187,7 +183,7 @@ height:500
       <p class="video_desc">"天使翅膀" by 张猛</p>
 
 
-        <div class="video_container">
+        <div class="video_container content_8">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_0905_6"></div>
           <script type="text/javascript">
@@ -202,7 +198,7 @@ height:500
       </div>
       <p class="video_desc">"星月神话" by 代莉</p>
 
-        <div class="video_container">
+        <div class="video_container content_9">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_1"></div>
           <script type="text/javascript">
@@ -217,7 +213,7 @@ height:500
       </div>
       <p class="video_desc">"红河谷双吉他演奏" by 上官云青.沈悦</p>
 
-        <div class="video_container">
+        <div class="video_container content_10">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_2"></div>
           <script type="text/javascript">
@@ -232,7 +228,7 @@ height:500
       </div>
       <p class="video_desc">"心愿" by 刘欣.刘蕊.张盼盼</p>
 
-        <div class="video_container">
+        <div class="video_container content_11">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_3"></div>
           <script type="text/javascript">
@@ -247,7 +243,7 @@ height:500
       </div>
       <p class="video_desc">"欢乐颂" by 张国强.江铭</p>
 
-        <div class="video_container">
+        <div class="video_container content_12">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_4"></div>
           <script type="text/javascript">
@@ -262,7 +258,7 @@ height:500
       </div>
       <p class="video_desc">"我和你" by 易子腾 </p>
 
-        <div class="video_container">
+        <div class="video_container content_13">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_5"></div>
           <script type="text/javascript">
@@ -277,7 +273,7 @@ height:500
       </div>
       <p class="video_desc">"送别" by 杨豪.张云昊</p>
 
-        <div class="video_container">
+        <div class="video_container content_14">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_6"></div>
           <script type="text/javascript">
@@ -292,7 +288,7 @@ height:500
       </div>
       <p class="video_desc">"蓝色生死恋" by 梁雨东</p>
 
-        <div class="video_container">
+        <div class="video_container content_15">
           <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
           <div id="video_7"></div>
           <script type="text/javascript">
@@ -306,23 +302,32 @@ height:500
 </script>
       </div>
       <p class="video_desc">"红河谷双吉他演奏" by 盛丽坤.方木</p>
-
-      <ul class="index_img">
-        <li>
-        <img onclick="addVideo('weishi_0826.flv');" src="images/weishi_cover.png" alt="520gsjt.com"/>
-        <a id="mp4_link" style="z-index:999" href="video/mp4/weishi_0826.mp4"><img style="position:absolute;left:122px; top:168px;z-index:9;" src="images/index_img1_bt.jpg" alt="mp4_link" /></a>
-        </li>
-        <li>
-        <img onclick="addVideo('shizizuo.flv');" src="images/shizizuo_cover.png" alt="观看视频 了解BIGPAD"/>
-        <a id="mp4_link" style="z-index:999" href="video/mp4/weishi_0826.mp4"><img style="position:absolute;left:454px; top:168px;z-index:9;" src="images/index_img1_bt.jpg" alt="mp4_link" /></a>
-        </li>
-        <li style="padding-right:0;">
-        <img onclick="addVideo('xinyuan.flv');" src="images/xinyuan_cover.png" alt="观看视频 了解BIGPAD"/>
-        <a id="mp4_link" style="z-index:999" href="video/mp4/xinyuan.mp4"><img style="position:absolute;left:787px; top:168px;z-index:9;" src="images/index_img1_bt.jpg" alt="mp4_link" /></a>
-        </li>
-      </ul>
     </div>
     <p class="clear"></p>
+
+    <!--数字栏目-->
+    <div class="num_nav">
+      <ul>
+        <li class="num_nav_li">首页</li>
+        <li><span>1</span><p>断桥残雪</p></li>
+        <li><span>2</span><p>千与千寻</p></li>
+        <li><span>3</span><p>虫儿飞</p></li>
+        <li><span>4</span><p>滳答</p></li>
+        <li><span>5</span><p>Falling Slowly</p></li>
+        <li><span>6</span><p>三寸天堂</p></li>
+        <li><span>7</span><p>天使翅膀</p></li>
+        <li><span>8</span><p>星月神话</p></li>
+        <li><span>9</span><p>红河谷双吉他</p></li>
+        <li><span>10</span><p>心愿</p></li>
+        <li><span>11</span><p>欢乐颂</p></li>
+        <li><span>12</span><p>我和你</p></li>
+        <li><span>13</span><p>送别</p></li>
+        <li><span>14</span><p>蓝色生死恋</p></li>
+        <li><span>15</span><p>红河谷双吉他</p></li>
+        <li class="num_nav_li">Back</li>
+        <li class="num_nav_li">Next</li>
+      </ul>
+    </div><!-- end of num_nav -->
 
     <!-- footer -->
     <div class="clearfix"></div>
@@ -333,5 +338,6 @@ height:500
         </a>
       </div>
     </div>
+    <script>start_on_video_page();</script>
   </body>
 </html>
