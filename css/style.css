@@ -224,3 +224,10 @@ p.video_desc{
 div.video_containers{
   margin-top: 30px;
 }
+.share_list {
+  position: fixed;
+  bottom: 65%;
+  width: 108px;
+  right: 0;
+  z-index: 999;
+}
