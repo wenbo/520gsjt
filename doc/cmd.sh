@@ -42,3 +42,4 @@ scp -r images/video/0906/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/v
 scp js/JSResponsiveWeb.js js/main.js js/video_main.js js/video_numNav.js wenbo@0371zhong.com:/var/www/html/520gsjt.com/js/
 scp js/video_main.js wenbo@0371zhong.com:/var/www/html/520gsjt.com/js/
 
+scp images/buzaiyouyu.jpg  images/shizizuo_cover.png images/weishi_cover.png  wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/
