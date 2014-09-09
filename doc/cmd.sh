@@ -25,8 +25,10 @@ scp -r images/video/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/
 scp -r jwplayer wenbo@0371zhong.com:/var/www/html/520gsjt.com/
 
 scp -r video/flv/0905/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/video/flv/
+scp -r video/flv/0909/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/video/flv/
 
 scp -r images/video/0905/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/video/
+scp -r images/video/0909/ wenbo@0371zhong.com:/var/www/html/520gsjt.com/images/video/
 
 scp index.html video.html wenbo@0371zhong.com:/var/www/html/520gsjt.com/
 scp css/style.css wenbo@0371zhong.com:/var/www/html/520gsjt.com/css/style.css
