@@ -27,7 +27,7 @@ function numNavEvent(){
 			}
 		}
 		_item.onmouseout=function (){
-			if(this.index<16&&this.index!=0){
+			if(this.index<17&&this.index!=0){
 				if(this.index-1!=_numNavId&&!_numNavClick){
 					TweenMax.to(this.getElementsByTagName("span")[0],.4,{css:{background:"#a6a5a5"}});
 					TweenMax.to(this.getElementsByTagName("p")[0],.4,{css:{width:0,left:0}});
@@ -37,7 +37,7 @@ function numNavEvent(){
 			}
 		}
 		_item.onclick=function (){
-			if(this.index<16&&this.index!=0){
+			if(this.index<17&&this.index!=0){
 				if(this.index-1!=_numNavId){
 					_numNavId=this.index-1;
 					_numNavClick=true;
@@ -46,16 +46,16 @@ function numNavEvent(){
 				}
 			}else{
 				
-				if(this.index==16){
+				if(this.index==17){
 					_numNavId--;
 					if(_numNavId<0){
 						_numNavId=0;
 						return;
 					}
-				}else if(this.index==17){
+				}else if(this.index==18){
 					_numNavId++;
-					if(_numNavId>15){
-						_numNavId=15;
+					if(_numNavId>16){
+						_numNavId=16;
 						return;
 					}
 				}else{
@@ -70,7 +70,7 @@ function numNavEvent(){
 }
 function numNavEff(id,e){
 	var _e=_js||e;
-	for(var i=0;i<16;i++){
+	for(var i=0;i<17;i++){
 		if(i!=0){
 			var _item=_e._class("num_nav").getElementsByTagName("li")[i];
 			if(i==id+1){
@@ -122,8 +122,10 @@ function scrollNavNum(num,_e){
 		_numNavId=12;
 	}else if(num>=_e._class("video_container content_14").offsetTop&&num<_e._class("video_container content_15").offsetTop){
 		_numNavId=13;
-	}else if(num>=_e._class("video_container content_15").offsetTop){
+	}else if(num>=_e._class("video_container content_15").offsetTop&&num<_e._class("video_container content_16").offsetTop){
 		_numNavId=14;
+	}else if(num>=_e._class("video_container content_16").offsetTop){
+		_numNavId=15;
 	}
 	if(!_numNavClick){
 		numNavEff(_numNavId,_e);
